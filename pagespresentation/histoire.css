@@ -1,0 +1,226 @@
+body {
+    background-color: #818181;
+}
+
+section {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 1210px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    margin-left: auto;
+}
+
+.container h1 {
+    margin-left: 60px;
+    margin-bottom: 35px;
+    color: #fff;
+    font-size: 55px;
+    font-weight: bold;
+}
+
+.liseret {
+    width: 2px;
+    background-color: red;
+    height: auto;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.txt {
+    display: flex;
+    overflow: hidden;
+}
+
+.txt p {
+    color: #fff;
+    font-size: 25px;
+}
+
+.chiffres {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 389px;
+}
+
+.bloc {
+    display: flex;
+    flex-direction: column;
+    background-color: #EF4242;
+    width: auto;
+    padding: 20px;
+    border-radius: 15px 15px;
+    margin-right: 30px;
+}
+
+.info {
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.number {
+    font-weight: bold;
+    font-size: 40px;
+    color: black;
+    margin-right: 20px;
+}
+
+.bloctxt {
+    color: #fff;
+    font-size: 18px;
+    width: 250px;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.firstelement {
+    margin-left: 22px;
+}
+
+h2 {
+    color: black;
+    font-weight: bold;
+    font-size: 34px;
+    margin-top: 300px;
+    margin-bottom: 20px;
+}
+
+.animate__fadeInDown {
+    animation-duration: 1s; /* don't forget to set a duration! */
+  }
+.animate__bounceInUp{
+    animation-duration: 1.5s;
+}
+.animate__fadeInRight{
+    animation-duration: 1s;
+}
+.animate__pulse{
+    animation-delay: 1s;
+    animation: infinite;
+    animation-duration: 1.5s;
+}
+.info:hover{
+    animation: tada;
+    animation-duration: 1s;
+}
+@media (max-width: 1645px) {
+
+    h2 {
+        font-size: 30px;
+    }
+
+}
+
+@media (max-width: 1535px) {
+
+    h2 {
+        font-size: 30px;
+    }
+
+    .number {
+        z-index: 9000;
+    }
+}
+
+@media (max-width: 1520px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        margin-top: 40px;
+        margin-bottom: 50px;
+        margin-left: auto;
+    }
+    h2{
+        margin-top: 30px;
+    }
+    .bloc{
+        flex-direction: row;
+        width: 800px;
+    }
+    .chiffres{
+        width: auto;
+        margin-bottom: 50px;
+    }
+    section{
+        justify-content: center;
+    }
+    .number{
+        width: 56px;
+    }
+ }
+ @media (max-width: 950px){
+     .bloc{
+         width: auto;
+         margin-right: 0;
+        }
+        .chiffres{
+            
+            margin: 0px 10px;
+            
+        }
+       .number{
+             margin-right: 4px;
+         }
+         .firstelement{
+             margin: 0;
+         }
+ }
+ @media (max-width: 820px){
+    .bloc{
+        flex-direction: column;
+        width: auto;
+        margin-bottom: 30px;
+    }
+   .container h1{
+        font-size: 40px;
+        margin-left: 35px;
+    }
+    .txt p {
+        font-size: 20px;
+    }
+    .liseret{
+        margin-left: 18px;
+        margin-right: 18px;
+    }
+ }
+ @media (max-width: 500px){
+   .container h1{
+        font-size: 30px;
+    }
+    .txt p {
+        font-size: 15px;
+    }
+    h2{
+        font-size: 25px;
+    }
+ }
+ @media (max-width: 380px){
+     .bloctxt{
+         font-size: 14px;
+     }
+     .number{
+         font-size: 35px;
+     }
+     .liseret{
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+    .container h1 {
+        margin-left: 20px;
+        font-size: 25px;
+    }
+     }
+ 

@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="fr">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DMTechnoligies</title>
+        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="expertise.css">
+        <link rel="icon" href="/images/favicon-32x32.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    </head>
+    
+    <body>
+    <div class="image">
+        <a href="../index.html"><img src="/images/LOGO.svg" alt="Logo_Entreprise" /></a>
+    </div>
+    <nav class="link" id="topnav">
+        <div class="toggle-button" onclick="myFunction()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="left nav_link">
+            <li class="deroulant" onclick="nav()">Présentation <span>&#9661</span>
+                <ul class="menu_deroulant" id="sous_menu">
+                    <li><a href="/pagespresentation/histoire.html">Histoire</a></li>
+                    <div class="liseret_menu"></div>
+                    <li><a href="/pagespresentation/atouts.html">Atouts</a></li>
+                    <div class="liseret_menu"></div>
+                    <li><a href="/pagespresentation/qualification.html">Qualifications</a></li>
+                    <div class="liseret_menu"></div>
+                    <li><a href="/pagespresentation/moyen.html">Moyens</a></li>
+                </ul>
+            </li>
+            <li ><a href="/pagesexpertise/expertise.html">Expertise </a></li>
+        </ul>
+        <ul class="right nav_link">
+            <li class="deroulant" onclick="nav2()"> <a href="/pagesactivités/activite.html"> Activités </a> <span>&#9661</span>
+                <ul class="menu_deroulant" id="sous_menu2">
+                    <li><a href="/pagesactivités/activite.html#eaupotable">Eau potable</a></li>
+                    <div class="liseret_menu"></div>
+                    <li><a href="/pagesactivités/activite.html#eauxusees">Eaux usées</a></li>
+                    <div class="liseret_menu"></div>
+                    <li><a href="/pagesactivités/activite.html#skid">Skid atelier</a></li>
+                    <div class="liseret_menu"></div>
+                    <li><a href="/pagesactivités/activite.html#charpente">Charpente métallique</a></li>
+                </ul>
+            </li>
+            <li class="deroulant" onclick="nav3()">Références <span>&#9661</span>
+                <ul class="menu_deroulant" id="sous_menu3">
+                    <li><a href="/pagesreferences/clients.html">Clients</a></li>
+                    <div class="liseret_menu"></div>
+                    <li><a href="/pagesreferences/réalisation.html">Réalisations</a></li>
+                    <div class="liseret_menu"></div>
+                    <li><a href="/pagesreferences/chantier.html">Zoom chantier</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    
+    <section>
+        <div class="container" >
+            <div class="card" id="sliderzoom"  onclick="openModal();currentSlide(1)" >
+                <div class="bloc">
+                    <div class="txt">
+                        <h3>Tuyauterie industriel</h3>
+                        <ul>
+                            <li>- SOUDAGE TIG, MIG, MMA</li>
+                            <li>- ACIER CARBONE, ACIER INOXYDABLE</li>
+                            <li>- QUALIFICATIONS DE SOUDAGE</li>
+                            <li>- DMOS ET QMOS : <br> DESCRIPTIF ET QUALIFICATION</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="caroussel" >
+                    <div class="project" id="slider">
+                        <div class="itemsproject" id="items3">
+                            <div>
+                                <img src="/images/photoTuyauterie/2.jpg" alt="Photo Tuyauterie"  width="200px" height="auto">
+                            </div>
+                        </div>
+                        <div class="itemsproject" id="items4">
+                            <div>
+                                <img src="/images/photoTuyauterie/a voirIMG_8018.jpeg" alt="Photo Tuyauterie" width="200px" height="auto">
+                            </div>
+                        </div>
+                        <div class="itemsproject" id="items4">
+                            <div>
+                                <img src="/images/photoTuyauterie/OK IMG_0927 copie.jpeg" alt="Photo Tuyauterie" width="200px" height="auto">
+                            </div>
+                        </div>
+                        <div class="itemsproject" id="items4">
+                            <div>
+                                <img src="/images/photoTuyauterie/OK MG_0200.jpeg" alt="cPhoto Tuyauterie" width="200px" height="auto">
+                            </div>
+                        </div>
+                        <div class="itemsproject" id="items4">
+                            <div>
+                                <img src="/images/photoTuyauterie/OK MG_1895.jpeg" alt="Photo Tuyauterie" width="200px" height="auto">
+                            </div>
+                        </div>
+                        <div class="itemsproject" id="items4">
+                            <div>
+                                <img src="/images/photoTuyauterie/OK Villiers-Saint-Denis-20130227-00255.jpeg" alt="Photo Tuyauterie" width="200px" height="auto">
+                            </div>
+                        </div>
+                        <div class="itemsproject" id="items4">
+                            <div>
+                                <img src="/images/photoTuyauterie/1472.jpeg" alt="Photo Tuyauterie" width="200px" height="auto">
+                            </div>
+                        </div>
+                        <div class="itemsproject" id="items4">
+                            <div>
+                                <img src="/images/photoTuyauterie/IMG_00000103 copie.jpeg" alt="Photo Tuyauterie" width="200px" height="auto">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+          
+              <div class="mySlides">
+                <div class="numbertext">1 / 8</div>
+                <img src="/images/photoTuyauterie/2.jpg" style="width:100%">
+              </div>
+          
+              <div class="mySlides">
+                <div class="numbertext">2 / 8</div>
+                <img src="/images/photoTuyauterie/a voirIMG_8018.jpeg" style="width:100%">
+              </div>
+          
+              <div class="mySlides">
+                <div class="numbertext">3 / 8</div>
+                <img src="/images/photoTuyauterie/OK IMG_0927 copie.jpeg" style="width:100%">
+              </div>
+              
+              <div class="mySlides">
+                <div class="numbertext">4 / 8</div>
+                <img src="/images/photoTuyauterie/OK MG_0200.jpeg" style="width:100%">
+              </div>
+              <div class="mySlides">
+                <div class="numbertext">5 / 8</div>
+                <img src="/images/photoTuyauterie/OK MG_1895.jpeg" style="width:100%">
+              </div>
+              <div class="mySlides">
+                <div class="numbertext">6 / 8</div>
+                <img src="/images/photoTuyauterie/OK Villiers-Saint-Denis-20130227-00255.jpeg" style="width:100%">
+              </div>
+              <div class="mySlides">
+                <div class="numbertext">7 / 8</div>
+                <img src="/images/photoTuyauterie/1472.jpeg" style="width:100%">
+              </div>
+              <div class="mySlides">
+                <div class="numbertext">8 / 8</div>
+                <img src="/images/photoTuyauterie/IMG_00000103 copie.jpeg" style="width:100%">
+              </div>
+              
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          
+              <div class="caption-container">
+                <p id="caption"></p>
+              </div>
+          
+          
+              <div class="column">
+                <img class="demo cursor" src="/images/photoTuyauterie/2.jpg" style="width:100%" onclick="currentSlide(1)" alt="Tuyauterie">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="/images/photoTuyauterie/a voirIMG_8018.jpeg" style="width:100%" onclick="currentSlide(2)" alt="Tuyauterie">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="/images/photoTuyauterie/OK IMG_0927 copie.jpeg" style="width:100%" onclick="currentSlide(3)" alt="Tuyauterie">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="/images/photoTuyauterie/OK MG_0200.jpeg" style="width:100%" onclick="currentSlide(4)" alt="Tuyauterie">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="/images/photoTuyauterie/OK MG_1895.jpeg" style="width:100%" onclick="currentSlide(5)" alt="Tuyauterie">
+              </div>
+              <div class="column">
+                  <img class="demo cursor" src="/images/photoTuyauterie/OK Villiers-Saint-Denis-20130227-00255.jpeg" style="width:100%" onclick="currentSlide(6)" alt="Tuyauterie">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="/images/photoTuyauterie/1472.jpeg" style="width:100%" onclick="currentSlide(7)" alt="Tuyauterie">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="/images/photoTuyauterie/IMG_00000103 copie.jpeg" style="width:100%" onclick="currentSlide(8)" alt="Tuyauterie">
+                  </div>
+            </div>
+            </div>
+          </div>
+          <!-- metallerie -->
+          <div id="myModalmetallerie" class="modal">
+            <span class="close cursor" onclick="closeModalMetallerie()">&times;</span>
+            <div class="modal-content">
+          
+              <div class="mySlidesMetallerie">
+                <div class="numbertext">1 / 8</div>
+                <img src="/images/photoTuyauterie/2.jpg" style="width:100%">
+              </div>
+          
+              <div class="mySlidesMetallerie">
+                <div class="numbertext">2 / 8</div>
+                <img src="/images/photoTuyauterie/a voirIMG_8018.jpeg" style="width:100%">
+              </div>
+          
+              <div class="mySlidesMetallerie">
+                <div class="numbertext">3 / 8</div>
+                <img src="/images/photoTuyauterie/OK IMG_0927 copie.jpeg" style="width:100%">
+              </div>
+              
+              <div class="mySlidesMetallerie">
+                <div class="numbertext">4 / 8</div>
+                <img src="/images/photoTuyauterie/OK MG_0200.jpeg" style="width:100%">
+              </div>
+              <div class="mySlidesMetallerie">
+                <div class="numbertext">5 / 8</div>
+                <img src="/images/photoTuyauterie/OK MG_1895.jpeg" style="width:100%">
+              </div>
+              <div class="mySlidesMetallerie">
+                <div class="numbertext">6 / 8</div>
+                <img src="/images/photoTuyauterie/OK Villiers-Saint-Denis-20130227-00255.jpeg" style="width:100%">
+              </div>
+              <div class="mySlidesMetallerie">
+                <div class="numbertext">7 / 8</div>
+                <img src="/images/photoTuyauterie/1472.jpeg" style="width:100%">
+              </div>
+              <div class="mySlidesMetallerie">
+                <div class="numbertext">8 / 8</div>
+                <img src="/images/photoTuyauterie/IMG_00000103 copie.jpeg" style="width:100%">
+              </div>
+              
+              <a class="prev" onclick="plusSlidesMetallerie(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlidesMetallerie(1)">&#10095;</a>
+          
+              <div class="caption-container">
+                <p id="captionMetallerie"></p>
+              </div>
+          
+          
+              <div class="column">
+                <img class="demoMetallerie cursor" src="/images/photoTuyauterie/2.jpg" style="width:100%" onclick="currentSlideMetallerie(1)" alt="Metallerie">
+              </div>
+              <div class="column">
+                <img class="demoMetallerie cursor" src="/images/photoTuyauterie/a voirIMG_8018.jpeg" style="width:100%" onclick="currentSlideMetallerie(2)" alt="Metallerie">
+              </div>
+              <div class="column">
+                <img class="demoMetallerie cursor" src="/images/photoTuyauterie/OK IMG_0927 copie.jpeg" style="width:100%" onclick="currentSlideMetallerie(3)" alt="Metallerie">
+              </div>
+              <div class="column">
+                <img class="demoMetallerie cursor" src="/images/photoTuyauterie/OK MG_0200.jpeg" style="width:100%" onclick="currentSlideMetallerie(4)" alt="Metallerie">
+              </div>
+              <div class="column">
+                <img class="demoMetallerie cursor" src="/images/photoTuyauterie/OK MG_1895.jpeg" style="width:100%" onclick="currentSlideMetallerie(5)" alt="Metallerie">
+              </div>
+              <div class="column">
+                  <img class="demoMetallerie cursor" src="/images/photoTuyauterie/OK Villiers-Saint-Denis-20130227-00255.jpeg" style="width:100%" onclick="currentSlideMetallerie(6)" alt="Metallerie">
+                </div>
+                <div class="column">
+                    <img class="demoMetallerie cursor" src="/images/photoTuyauterie/1472.jpeg" style="width:100%" onclick="currentSlideMetallerie(7)" alt="Metallerie">
+                  </div>
+                  <div class="column">
+                    <img class="demoMetallerie cursor" src="/images/photoTuyauterie/IMG_00000103 copie.jpeg" style="width:100%" onclick="currentSlideMetallerie(8)" alt="Metallerie">
+                  </div>
+            </div>
+            </div>
+          </div>
+          <!-- chaudronnerie -->
+          <div id="myModalChaudronnerie" class="modal">
+            <span class="close cursor" onclick="closeModalChaudronnerie()">&times;</span>
+            <div class="modal-content">
+          
+              <div class="mySlidesChaudronnerie">
+                <div class="numbertext">1 / 8</div>
+                <img src="/images/photoTuyauterie/2.jpg" style="width:100%">
+              </div>
+          
+              <div class="mySlidesChaudronnerie">
+                <div class="numbertext">2 / 8</div>
+                <img src="/images/photoTuyauterie/a voirIMG_8018.jpeg" style="width:100%">
+              </div>
+          
+              <div class="mySlidesChaudronnerie">
+                <div class="numbertext">3 / 8</div>
+                <img src="/images/photoTuyauterie/OK IMG_0927 copie.jpeg" style="width:100%">
+              </div>
+              
+              <div class="mySlidesChaudronnerie">
+                <div class="numbertext">4 / 8</div>
+                <img src="/images/photoTuyauterie/OK MG_0200.jpeg" style="width:100%">
+              </div>
+              <div class="mySlidesChaudronnerie">
+                <div class="numbertext">5 / 8</div>
+                <img src="/images/photoTuyauterie/OK MG_1895.jpeg" style="width:100%">
+              </div>
+              <div class="mySlidesChaudronnerie">
+                <div class="numbertext">6 / 8</div>
+                <img src="/images/photoTuyauterie/OK Villiers-Saint-Denis-20130227-00255.jpeg" style="width:100%">
+              </div>
+              <div class="mySlidesChaudronnerie">
+                <div class="numbertext">7 / 8</div>
+                <img src="/images/photoTuyauterie/1472.jpeg" style="width:100%">
+              </div>
+              <div class="mySlidesChaudronnerie">
+                <div class="numbertext">8 / 8</div>
+                <img src="/images/photoTuyauterie/IMG_00000103 copie.jpeg" style="width:100%">
+              </div>
+              
+              <a class="prev" onclick="plusSlidesChaudronnerie(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlidesChaudronnerie(1)">&#10095;</a>
+          
+              <div class="caption-container">
+                <p id="captionChaudronnerie"></p>
+              </div>
+          
+          
+              <div class="column">
+                <img class="demoChaudronnerie cursor" src="/images/photoTuyauterie/2.jpg" style="width:100%" onclick="currentSlideChaudronnerie(1)" alt="Chaudronnerie">
+              </div>
+              <div class="column">
+                <img class="demoChaudronnerie cursor" src="/images/photoTuyauterie/a voirIMG_8018.jpeg" style="width:100%" onclick="currentSlideChaudronnerie(2)" alt="Chaudronnerie">
+              </div>
+              <div class="column">
+                <img class="demoChaudronnerie cursor" src="/images/photoTuyauterie/OK IMG_0927 copie.jpeg" style="width:100%" onclick="currentSlideChaudronnerie(3)" alt="Chaudronnerie">
+              </div>
+              <div class="column">
+                <img class="demoChaudronnerie cursor" src="/images/photoTuyauterie/OK MG_0200.jpeg" style="width:100%" onclick="currentSlideChaudronnerie(4)" alt="Chaudronnerie">
+              </div>
+              <div class="column">
+                <img class="demoChaudronnerie cursor" src="/images/photoTuyauterie/OK MG_1895.jpeg" style="width:100%" onclick="currentSlideChaudronnerie(5)" alt="Chaudronnerie">
+              </div>
+              <div class="column">
+                  <img class="demoChaudronnerie cursor" src="/images/photoTuyauterie/OK Villiers-Saint-Denis-20130227-00255.jpeg" style="width:100%" onclick="currentSlideChaudronnerie(6)" alt="Chaudronnerie">
+                </div>
+                <div class="column">
+                    <img class="demoChaudronnerie cursor" src="/images/photoTuyauterie/1472.jpeg" style="width:100%" onclick="currentSlideChaudronnerie(7)" alt="Chaudronnerie">
+                  </div>
+                  <div class="column">
+                    <img class="demoChaudronnerie cursor" src="/images/photoTuyauterie/IMG_00000103 copie.jpeg" style="width:100%" onclick="currentSlideChaudronnerie(8)" alt="Chaudronnerie">
+                  </div>
+            </div>
+            </div>
+        <div class="container">
+            <div class="card" onclick="openModalMetallerie();currentSlideMetallerie(1)">
+                <div class="bloc">
+                    <div class="txt">
+                        <h3>Métallerie</h3>
+                        <ul>
+                            <li>- Acier inoxydable / aluminium</li>
+                            <li>- acier carbone</li>
+                            <li>- peinture, plastification, galvanisation</li>
+                            <li>- trappes, platelage, passerelle, garde corps, échelles, escaliers</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="caroussel">
+                    <div class="project" id="slidermetallerie">
+                        <div class="itemsproject" id="items3">
+                            <div>
+                                <img src="/images/chnatierguadeloupe/image12.jpeg" alt="opéra bastille"  width="200px" height="100%">
+                            </div>
+                        </div>
+                        <div class="itemsproject" id="items4">
+                            <div>
+                                <img src="/images/chnatierguadeloupe/image13.jpeg" alt="charpente métallique samaritaine" width="200px" height="auto">
+                            </div>
+                        </div>
+                        <div class="itemsproject" id="items4">
+                            <div>
+                                <img src="/images/chnatierguadeloupe/image19.jpeg" alt="charpente métallique samaritaine" width="200px" height="auto">
+                            </div>
+                        </div>
+                        <div class="itemsproject" id="items4">
+                            <div>
+                                <img src="/images/chnatierguadeloupe/image15.jpeg" alt="charpente métallique samaritaine" width="200px" height="auto">
+                            </div>
+                        </div>
+                        <div class="itemsproject" id="items4">
+                            <div>
+                                <img src="/images/chnatierguadeloupe/image17.jpeg" alt="charpente métallique samaritaine" width="200px" height="auto">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container" >
+            <div class="card" onclick="openModalChaudronnerie();currentSlideChaudronnerie(1)">
+                <div class="bloc">
+                    <div class="txt">
+                        <h3>Chaudronnerie</h3>
+                        <ul>
+                            <li>- Fabrication sur plans</li>
+                            <li>- etudes, dao et fabrication atelier</li>
+                            <li>- sablage, peinture, galvanisation</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="caroussel" >
+                    <div class="project" id="sliderchaudronnerie">
+                        <div class="itemsproject" id="items3">
+                            <div>
+                                <img src="/images/chnatierguadeloupe/image12.jpeg" alt="opéra bastille"  width="200px" height="100%">
+                            </div>
+                        </div>
+                        <div class="itemsproject" id="items4">
+                            <div>
+                                <img src="/images/chnatierguadeloupe/image13.jpeg" alt="charpente métallique samaritaine" width="200px" height="auto">
+                            </div>
+                        </div>
+                        <div class="itemsproject" id="items4">
+                            <div>
+                                <img src="/images/chnatierguadeloupe/image19.jpeg" alt="charpente métallique samaritaine" width="200px" height="auto">
+                            </div>
+                        </div>
+                        <div class="itemsproject" id="items4">
+                            <div>
+                                <img src="/images/chnatierguadeloupe/image15.jpeg" alt="charpente métallique samaritaine" width="200px" height="auto">
+                            </div>
+                        </div>
+                        <div class="itemsproject" id="items4">
+                            <div>
+                                <img src="/images/chnatierguadeloupe/image17.jpeg" alt="charpente métallique samaritaine" width="200px" height="auto">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div>DMTECHNOLOGIES 10 ROUTE DE SAINT GOBAIN 02300 SINCENY I <a href="/Contact/contact.html">CONTACT</a> : DMT@DMTECHNOLOGIES.FR I <a
+            href=""> MENTIONS LÉGALES.</a> </div>
+            <div> <a href="https://www.maevacommunication.com/" target="_blank"> CRÉATION : MAEVA COM' </a></div>
+        </footer>
+    </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script src="../script/script.js"></script>
+    <script src="sliderexpertise.js"></script>
+    </html>

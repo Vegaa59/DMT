@@ -1,0 +1,251 @@
+body{
+    background-color: rgb(139, 139, 139);
+}
+
+section{
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.container{
+    display: flex;
+    justify-content: flex-start;
+    transition: .5s;
+    margin: 80px 0;
+}
+.caroussel{
+    width: 500px;
+    height: 370px;
+    overflow: hidden;
+}
+.project{
+    display: flex;
+}
+.itemsproject img {
+    width: 500px;
+    border-radius: 0px 0px 5px 5px;
+}
+.itemsproject div{
+    overflow: hidden;
+}
+.tns-liveregion{
+    display: none;
+}
+.bloc{
+    width: 500px;
+    height: 335px;
+    background-color: rgba(41, 41, 41, 0.678);
+    padding: 20px;
+    border-radius: 5px 5px 0px 0px;
+    transition: .5s;
+}
+.bloc li {
+    text-transform: uppercase;
+}
+.bloc ul {
+    width: 350px;
+}
+h3{
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: bold;
+    font-size: 25px;
+    overflow: hidden;
+}
+.txt{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(233, 233, 233);
+    line-height: 30px;
+    -webkit-box-shadow: 6px 6px 19px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 6px 6px 19px rgba(58, 58, 58, 0.75);
+    box-shadow: 6px 6px 19px -2px rgb(51, 50, 50);
+}
+.card{
+    display: flex;
+    flex-direction: column;
+}
+.container:hover{
+    transform: scale(1.1);
+    -webkit-box-shadow: 6px 6px 19px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 6px 6px 19px -2px rgba(0,0,0,0.75);
+    box-shadow: 6px 6px 19px -2px rgba(0,0,0,0.75);
+}
+.container:hover .bloc{
+    background-color:  rgba(41, 41, 41, 0.795);
+}
+
+.second_container{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+body {
+    font-family: Verdana, sans-serif;
+    margin: 0;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .row > .column {
+    padding: 0 8px;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .column {
+    float: left;
+    width: 25%;
+    height: 174px;
+    overflow: hidden;
+  }
+  
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 3000;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.808);
+    padding: 25px;
+  }
+  
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 45%;
+    max-width: 1200px;
+  }
+  
+  .close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .mySlides {
+    display: none;
+  }
+  .mySlidesMetallerie{
+    display: none;
+    overflow: hidden;
+  }
+  .mySlidesChaudronnerie{
+    display: none;
+    overflow: hidden;
+  }
+  .cursor {
+    cursor: pointer;
+  }
+  
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -180px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+    background-color: rgba(59, 59, 59, 0.829);
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.829);
+  }
+  
+
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  img {
+    margin-bottom: -4px;
+  }
+  
+  .caption-container {
+    text-align: center;
+    background-color: rgba(29, 29, 29, 0.884);
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .demo {
+    opacity: 0.6;
+  }
+  .demoMetallerie {
+    opacity: 0.6;
+  }
+  .demoChaudronnerie {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+  .active,
+  .demoMetallerie:hover {
+    opacity: 1;
+  }
+  .active,
+  .demoChaudronnerie:hover {
+    opacity: 1;
+  }
+  img.hover-shadow {
+    transition: 0.3s;
+  }
+  
+  .hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .mySlides{
+      overflow: hidden;
+  }

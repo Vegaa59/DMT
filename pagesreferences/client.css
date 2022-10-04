@@ -1,0 +1,37 @@
+body{
+    background-color: #ffffff;
+}
+section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px 80px;
+    overflow: hidden;
+}
+.bloc_logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 250px;
+    background-color: #fff;
+    border-radius: 10px 10px;
+    margin: 30px;
+    -webkit-box-shadow: 4px 5px 16px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 5px 16px -4px rgba(0,0,0,0.75);
+    box-shadow: 4px 5px 16px -4px rgba(0,0,0,0.75);
+}
+.bloc_logo img{
+    width: 200px;
+    height: auto;
+}
+
+
+@media (max-width: 475px){
+    section{
+        margin: 20px 10px;
+    }
+    .bloc_logo{
+        margin: 20px 0px;
+    }
+}

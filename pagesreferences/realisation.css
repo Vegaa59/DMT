@@ -1,0 +1,71 @@
+*{
+    overflow: hidden;
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+    overflow: hidden;
+    top: 0;
+}
+
+.itemsproject img{
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+}
+.tour {
+  background-image: url("/images/original_374735053.jpg");
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.opera{
+  background-image: url("/images/rendered\ copie.jpg");
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bastille{
+  background-image: url("/images/original_255385639.jpg");
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.samaritaine{
+  background-image: url("/images/samaritaine.jpg");
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.project{
+    display: flex;
+    overflow: hidden;
+}
+.tns-liveregion {
+    display: none;
+  }
+  footer{
+display: none;
+  }
+  .txt{
+      height: 150px;
+      width: 100vw;
+      background-color: rgba(0, 0, 0, 0.486);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      font-size: 30px;
+    position: absolute;
+    bottom: 0;
+  }
+  .txt p {
+    margin-left: 50px;
+  }
